@@ -1,14 +1,22 @@
-const TodoItem = () => {
+/* eslint-disable react/prop-types */
+const TodoItem = ({ todoItems }) => {
+  console.log("todos----", todoItems);
   return (
-    <div className="row kg-row">
-      <div className="col-6">buy milk</div>
-      <div className="col-4">26/10/1995</div>
-      <div className="col-2">
-        <button type="button" className="btn btn-danger kg-button">
-          Delete
-        </button>
-      </div>
-    </div>
+    <>
+      {todoItems.map((item) => {
+        return (
+          <div className="row kg-row" key={item.id}>
+            <div className="col-6">{item.name}</div>
+            <div className="col-4">{item.date}</div>
+            <div className="col-2">
+              <button type="button" className="btn btn-danger kg-button">
+                Delete
+              </button>
+            </div>
+          </div>
+        );
+      })}
+    </>
   );
 };
 
