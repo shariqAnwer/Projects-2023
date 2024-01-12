@@ -15,9 +15,12 @@
 .home_panel-wrap {
   border: 2px solid black;
   flex-basis: 280px;
+  padding: 1rem;
 }
 .home_list-wrap{
   border: 2px solid blue;
   flex: 1;
+  padding: 1rem;
+
 }
 

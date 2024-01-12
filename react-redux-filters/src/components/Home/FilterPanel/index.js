@@ -1,11 +1,30 @@
-import React from 'react'
+import "./style.css";
 
-const FilterPanel = () => {
+import FilterListToggle from "../../commom/FilterListToggle";
+import React from "react";
+import { categoryList } from "../../../constants";
+
+const FilterPanel = ({selectedCategory, selectToggle}) => {
   return (
     <div>
-      <h1>FilterPanel</h1>
+      {/* Category filter */}
+      <div className="input-group">
+        <p className="label">Category</p>
+        <FilterListToggle
+          options={categoryList}
+          value={selectedCategory}
+          selectToggle={selectToggle}
+        />
+      </div>
+      {/* Cuisine filter */}
+      {/* Price filter  */}
+      {/* Star rating */}
+      <div className="input-group">
+      <p className="label">Star Rating</p>
+        
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default FilterPanel
+export default FilterPanel;

@@ -1,6 +1,8 @@
+import "./style.css"
+
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
-import "./style.css"
+
 const SearchBar = ({value,changeInput}) => {
   return (
     <div className='searchBar-wrap'>
