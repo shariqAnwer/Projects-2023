@@ -1,3 +1,4 @@
+import authRouter from "./routes/auth.route.js";
 import dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
@@ -14,7 +15,9 @@ mongoose
   .catch((error) => console.log(error));
 
 const app = express();
+app.use(express.json());
 
 app.listen(3000, () => console.log("listening on port  3000!!!"));
 
 app.use("/api", userRouter);
+app.use("/api/auth", authRouter);
