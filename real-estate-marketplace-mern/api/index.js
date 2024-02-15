@@ -1,5 +1,4 @@
 import dotenv from "dotenv";
-import { error } from "console";
 import express from "express";
 import mongoose from "mongoose";
 
