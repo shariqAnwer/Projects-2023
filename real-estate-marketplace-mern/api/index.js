@@ -5,7 +5,6 @@ import mongoose from "mongoose";
 import userRouter from "./routes/user.route.js";
 
 dotenv.config();
-// pass&user-shariqueanwer
 
 mongoose
   .connect(process.env.MONGO_URI)
