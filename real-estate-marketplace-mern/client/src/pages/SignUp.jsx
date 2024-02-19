@@ -38,8 +38,7 @@ const SignUp = () => {
       console.log("sign-up:", data.data.message);
     } catch (error) {
       setLoading(false);
-      setError(error?.message);
-      console.log(error.message);
+      setError(error.response.data.message);
     }
   };
 
