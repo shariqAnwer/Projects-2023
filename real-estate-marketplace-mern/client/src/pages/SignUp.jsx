@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 
+import Oauth from "../components/Oauth";
 import axios from "axios";
 import { useState } from "react";
 
@@ -75,6 +76,7 @@ const SignUp = () => {
           >
             {loading ? "Loading..." : "Sign Up"}
           </button>
+          <Oauth />
         </form>
         <div className="flex mt-3">
           <p>Have an account?</p>

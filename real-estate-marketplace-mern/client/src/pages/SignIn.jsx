@@ -6,6 +6,7 @@ import {
 } from "../redux/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 
+import Oauth from "../components/Oauth";
 import axios from "axios";
 import { useState } from "react";
 
@@ -81,6 +82,7 @@ const SignIn = () => {
           >
             {loading ? "Loading..." : "Sign In"}
           </button>
+          <Oauth />
         </form>
         <div className="flex mt-3">
           <p>Dont have an account?</p>
