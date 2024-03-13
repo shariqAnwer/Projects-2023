@@ -16,9 +16,9 @@ const Profile = () => {
   const [filePerc, setFilePerc] = useState(0);
   const [fileUploadError, setFileUploadError] = useState(false);
   const [formData, setFormData] = useState(null);
-  console.log(filePerc);
-  console.log(fileUploadError);
-  console.log(formData);
+  // console.log(filePerc);
+  // console.log(fileUploadError);
+  // console.log(formData);
 
   const handleFileUpload = (file) => {
     const storage = getStorage(app);
@@ -49,6 +49,7 @@ const Profile = () => {
     if (file) {
       handleFileUpload(file);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [file]);
 
   return (
