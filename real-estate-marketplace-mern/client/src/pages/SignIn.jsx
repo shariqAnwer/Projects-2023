@@ -48,7 +48,7 @@ const SignIn = () => {
       // setFormData({});
       dispatch(signInSuccess(data.data));
       navigate("/");
-      console.log("sign-in:", data.data.message);
+      //console.log("sign-in:", data.data.message);
     } catch (error) {
       // setLoading(false);
       // setError(error.response.data.message);
