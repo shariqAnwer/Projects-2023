@@ -18,6 +18,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useRef, useState } from "react";
 
+import { Link } from "react-router-dom";
 import { app } from "../firebase";
 import axios from "axios";
 
@@ -186,6 +187,12 @@ const Profile = () => {
         >
           {loading ? "Loading..." : "update"}
         </button>
+        <Link
+          className="text-white text-center rounded-lg p-3 uppercase bg-green-700 hover:opacity-95"
+          to={"/create-listing"}
+        >
+          Create Listing
+        </Link>
       </form>
       <div className="flex justify-between mt-5">
         <span
