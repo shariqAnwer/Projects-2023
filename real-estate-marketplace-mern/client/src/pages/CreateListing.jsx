@@ -15,7 +15,7 @@ const CreateListing = () => {
             minLength="10"
             required
           />
-          <input
+          <textarea
             className="border p-3 rounded-lg"
             type="text"
             placeholder="Description"
@@ -120,7 +120,7 @@ const CreateListing = () => {
               accept="image/*"
               className="p-3 border border-gray-300 rounded w-full"
             />
-            <button className="p-3 text-green-700 rounded uppercase hover:shadow:lg disabled:opacity-80">
+            <button className="p-3 text-green-700 rounded uppercase border-solid border-2 border-green-700 hover:shadow-lg disabled:opacity-80">
               Upload
             </button>
           </div>
