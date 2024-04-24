@@ -60,7 +60,7 @@ const CreateListing = () => {
         (snapshot) => {
           const progress =
             (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          console.log(`Uploading ${Math.floor(progress)}`);
+          //console.log(`Uploading ${Math.floor(progress)}`);
         },
         (error) => reject(error),
         () =>
@@ -78,7 +78,7 @@ const CreateListing = () => {
       imageUrls: formData.imageUrls.filter((_, i) => i !== index),
     });
   };
-  console.log("hbubffffffffffff", uploading);
+
   return (
     <main className="p-3 max-w-4xl mx-auto">
       <h1 className="text-3xl font-semibold text-center my-7">
