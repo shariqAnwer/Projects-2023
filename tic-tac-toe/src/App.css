@@ -1,0 +1,36 @@
+.game {
+  max-width: calc(3 * 100px);
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.status {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
+  justify-content: center;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: large;
+  border: 2px solid #cccccc;
+  cursor: pointer;
+  transition: background-color 0.3 ease-in-out;
+}
+
+.cell:hover {
+  background-color: rgba(255, 255, 255, 0.897);
+}
+
+.reset-button {
+  padding: 5px 10px;
+}
